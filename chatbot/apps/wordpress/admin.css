@@ -1,0 +1,185 @@
+/*
+* 
+* ==========================================================
+* ADMIN.CSS
+* ==========================================================
+*
+* WordPress only admin style
+*
+*/
+
+.sb-admin {
+    margin-left: -20px;
+    height: calc(100% - 30px);
+    width: calc(100% - 225px);
+    top: 32px;
+}
+
+.sb-admin > .sb-header {
+    left: 160px;
+    top: 30px;
+}
+
+.sb-admin > .sb-header > .sb-admin-nav-right {
+    left: 160px;
+}
+
+.sb-tooltip {
+    transform: translate(-160px, -30px);
+}
+
+#wpfooter, .sb-admin-nav-right .sb-account [data-value="logout"], #wpbody-content > .notice {
+    display: none;
+}
+
+.sb-admin a:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.sb-admin select:active, .sb-admin select:hover {
+    color: rgb(36, 39, 42);
+}
+
+li.toplevel_page_support-board img {
+    max-width: 18px;
+    opacity: 1 !important;
+    margin-top: -1px;
+}
+
+.sb-lightbox {
+    top: calc(50% + 15px);
+    left: calc(50% + 85px);
+}
+
+.folded .sb-lightbox {
+    left: calc(50% + 35px);
+}
+
+.sb-admin label {
+    cursor: text;
+}
+
+.sb-setting div select {
+    padding: 0 35px 0 10px;
+}
+
+.sb-lightbox-overlay {
+    left: 160px;
+}
+
+.folded .sb-lightbox-overlay {
+    left: 35px;
+}
+
+.folded .sb-tooltip {
+    transform: translate(-37px, -30px);
+}
+
+.folded .sb-admin > .sb-header, .folded .sb-admin > .sb-header > .sb-admin-nav-right {
+    left: 36px;
+}
+
+.folded .sb-admin {
+    width: calc(100% - 100px);
+}
+
+.sb-input > select {
+    -webkit-appearance: auto;
+    background-image: none;
+}
+
+/*
+
+# RTL
+==========================================================
+
+*/
+
+body.rtl #wpcontent {
+    padding-right: 0;
+}
+
+body.rtl .sb-rtl > .sb-header, body.rtl .sb-rtl > .sb-header > .sb-admin-nav-right {
+    right: 160px;
+}
+
+body.rtl .sb-admin > .sb-header {
+    left: 0;
+}
+
+body.rtl.folded .sb-rtl > .sb-header, body.rtl.folded .sb-rtl > .sb-header > .sb-admin-nav-right {
+    right: 35px;
+}
+
+body.rtl .sb-lightbox {
+    left: calc(50% - 85px);
+}
+
+body.rtl.folded .sb-lightbox {
+    left: calc(50% - 35px);
+}
+
+body.rtl.folded .sb-lightbox-overlay {
+    left: auto;
+    right: 35px;
+}
+
+/*
+
+# WOOCOMMERCE
+==========================================================
+
+*/
+
+.sb-panel-woocommerce .sb-list-items > a > span:first-child {
+    opacity: .6;
+    margin-right: 5px;
+}
+
+/*
+
+# RESPONSIVE
+==========================================================
+
+*/
+
+@media (max-width: 960px) {
+    .sb-admin {
+        width: calc(100% - 101px);
+    }
+
+    .sb-admin > .sb-header, .sb-admin > .sb-header > .sb-admin-nav-right {
+        left: 36px;
+    }
+
+    .sb-board > .sb-admin-list, .sb-board .sb-user-details {
+        min-width: 250px;
+    }
+
+    .sb-lightbox-overlay {
+        left: 36px;
+    }
+
+    .sb-lightbox {
+        width: calc(100% - 100px);
+    }
+
+    .sb-tooltip {
+        transform: translate(-37px, -30px);
+    }
+}
+
+@media (max-width: 782px) {
+    .sb-admin {
+        width: calc(100% - 55px);
+    }
+
+    .sb-admin > .sb-header, .sb-admin > .sb-header > .sb-admin-nav-right {
+        left: 0;
+    }
+
+    .sb-lightbox-overlay {
+        left: 0;
+    }
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "type": "checkbox",
+    "id": "wp-manual",
+    "title": "Display manually",
+    "content": "Display the chat manually. You will need to manually insert the chat script to the pages you want to show the chat."
+  },
+  {
+    "type": "checkbox",
+    "id": "wp-multisite",
+    "title": "Multisite routing",
+    "content": "Automatically create a department for each website and route the conversations of each website to the right department. This setting requires a WordPress Multisite installation."
+  },
+  {
+    "type": "multi-input",
+    "id": "wp-visibility",
+    "title": "Visibility",
+    "content": "Choose where to display the chat. Insert the values separated by commas.",
+    "help": "https://board.support/docs/#wp-settings",
+    "value": [
+      {
+        "type": "select",
+        "id": "wp-visibility-type",
+        "title": "Type",
+        "value": [
+          [ "show", "Show" ],
+          [ "hide", "Hide" ]
+        ]
+      },
+      {
+        "type": "text",
+        "id": "wp-visibility-ids",
+        "title": "Pages IDs",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "id": "wp-visibility-post-types",
+        "title": "Post Types slugs",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "id": "wp-users-system",
+    "title": "User system",
+    "content": "Choose which user system the front-end chat will use to register and log in users.",
+    "help": "https://board.support/docs/#wp-sync",
+    "value": [
+      [ "sb", "Support Board" ],
+      [ "wp", "WordPress" ]
+    ]
+  },
+  {
+    "type": "button",
+    "id": "wp-sync",
+    "title": "Synchronize users",
+    "content": "Sync all WordPress users with Support Board. Only new users will be imported.",
+    "button-text": "Start importing",
+    "button-url": "#"
+  },
+  {
+    "type": "select",
+    "id": "wp-multilingual-plugin",
+    "title": "Multilingual plugin",
+    "content": "Set the multilingual plugin you're using, or leave it disabled if your site uses only one language.",
+    "value": [
+      [ "", "Disabled" ],
+      [ "wpml", "WPML" ],
+      [ "polylang", "Polylang" ]
+    ]
+  },
+  {
+    "type": "select",
+    "id": "wp-language",
+    "title": "Force language",
+    "content": "Force the chat to ignore the language preferences, and to use always the same language.",
+    "value": [
+      [ "", "Disabled" ],
+      [ "ar", "Arabic" ],
+      [ "bg", "Bulgarian" ],
+      [ "da", "Danish" ],
+      [ "de", "German" ],
+      [ "el", "Greek" ],
+      [ "en", "English" ],
+      [ "es", "Spanish" ],
+      [ "fa", "Persian" ],
+      [ "fi", "Finnish" ],
+      [ "fr", "French" ],
+      [ "hi", "Hindi" ],
+      [ "id", "Indonesian" ],
+      [ "it", "Italian" ],
+      [ "ja", "Japanese" ],
+      [ "ko", "Korean" ],
+      [ "nl", "Dutch" ],
+      [ "no", "Norwegian" ],
+      [ "pl", "Polish" ],
+      [ "pt", "Portuguese" ],
+      [ "ro", "Romanian" ],
+      [ "ru", "Russian" ],
+      [ "sk", "Slovak" ],
+      [ "sv", "Swedish" ],
+      [ "th", "Thai" ],
+      [ "tr", "Turkish" ],
+      [ "uk", "Ukrainian" ],
+      [ "vi", "Vietnamese" ],
+      [ "zh", "Chinese" ]
+    ]
+  },
+  {
+    "type": "text",
+    "id": "wp-roles",
+    "title": "User roles",
+    "content": "Add comma separated WordPress user roles. The Support Board administration area will be available for new roles, in addition to the default one: editor, administrator, author."
+  }
+]
